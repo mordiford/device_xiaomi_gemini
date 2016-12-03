@@ -1,8 +1,8 @@
 [
  {
-   "repository": "AICP/kernel_xiaomi_msm8996",
-   "target_path": "kernel/xiaomi/msm8996",
-    "branch":      "n7.1"
+   "repository": "mordiford/nanami-mi5-kernel",
+   "target_path": "kernel/xiaomi/nanami",
+    "branch":      "nanami-v3-new"
  },
  {
     "repository": "LineageOS/android_packages_resources_devicesettings",
