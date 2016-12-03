@@ -21,14 +21,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from gemini device
 $(call inherit-product, device/xiaomi/gemini/device.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common AICP stuff.
+$(call inherit-product, vendor/aicp/configs/common.mk)
+
+# Inherit telephony stuff
+$(call inherit-product, vendor/aicp/configs/telephony.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := cm_gemini
+PRODUCT_NAME := aicp_gemini
 PRODUCT_DEVICE := gemini
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := MI 5
+PRODUCT_MODEL := Mi 5
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
@@ -40,3 +43,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="gemini-user 6.0.1 MXB48T 6.9.29 release-keys"
 
 TARGET_VENDOR := Xiaomi
+
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	DEVICE_MAINTAINERS="lindwurm (Unofficial)"
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
+-include vendor/aicp/configs/bootanimation.mk
