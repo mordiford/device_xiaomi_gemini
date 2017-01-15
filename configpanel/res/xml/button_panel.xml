@@ -19,22 +19,22 @@
 
     <SwitchPreference
         android:key="button_swap"
-        android:title="@string/button_swap_title"
-        android:summary="@string/button_swap_summary" />
+        android:title="Switch Buttons"
+        android:summary="Swap the order of Recents and Back" />
 
     <PreferenceCategory
         android:key="fp_key"
-        android:title="@string/fingerprint_title" >
+        android:title="Fingerprint" >
 
         <SwitchPreference
             android:key="fp_home"
-            android:title="@string/fingerprint_as_home_title"
-            android:summary="@string/fingerprint_as_home_summary" />
+            android:title="Fingerprint as Home"
+            android:summary="Use fingerprint sensor as Home" />
 
         <SwitchPreference
             android:key="fp_wakeup"
-            android:title="@string/fingerprint_wakeup_title"
-            android:summary="@string/fingerprint_wakeup_summary" />
+            android:title="Fingerprint Wakeup"
+            android:summary="Use fingerprint sensor to wakeup device" />
 
     </PreferenceCategory>
 
