@@ -46,7 +46,7 @@
 
         <activity
             android:name=".ButtonSettings"
-            android:label="Config Panel">
+            android:label="@string/button_panel_title">
             <intent-filter>
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
             </intent-filter>
