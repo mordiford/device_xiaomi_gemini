@@ -2,7 +2,7 @@
  {
    "repository": "mordiford/nanami-mi5-kernel",
    "target_path": "kernel/xiaomi/nanami",
-    "branch":      "nanami-v3-new"
+    "branch":      "nanami-v4-new"
  },
   {
    "repository": "mordiford/device_xiaomi_msm8996-common",
