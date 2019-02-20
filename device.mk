@@ -42,8 +42,8 @@ PRODUCT_PACKAGES += \
     Snap
 
 # ConfigPanel
-PRODUCT_PACKAGES += \
-    ConfigPanel
+#PRODUCT_PACKAGES += \
+#    ConfigPanel
 
 # Consumer IR
 PRODUCT_PACKAGES += \
